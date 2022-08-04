@@ -22,11 +22,11 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
           gap: { lg: "20px", xs: "0" },
         }}
       >
-        {exerciseVideos?.slice(0, 7).map((item, index) => (
+        {exerciseVideos?.slice(0, 6).map((item, index) => (
           <a
             key={index}
             className="exercise-video"
-            href={`https://www.youtube.com/watch?v=${item.video.videoId}`}
+            href={`https://www.youtube.com/watch?v = ${item.video.videoId}`}
             target="_blank"
             rel="noreferrer"
           >
