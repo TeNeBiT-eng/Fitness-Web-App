@@ -1,6 +1,6 @@
 import React from "react";
 import { Stack } from "@mui/material";
-import { InfinitySpin } from "react-loader-spinner";
+import { ThreeDots } from "react-loader-spinner";
 
 const Loader = () => {
   return (
@@ -10,7 +10,7 @@ const Loader = () => {
       alignItems="center"
       width="100%"
     >
-        <InfinitySpin color='gray' />
+      <ThreeDots color="#ff2625" />
     </Stack>
   );
 };

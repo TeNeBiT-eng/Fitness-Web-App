@@ -10,18 +10,18 @@ const Detail = ({ exerciseDetail }) => {
 
   const extraDetail = [
     {
-        icon: BodyPartImage,
-        name: bodyPart,
+      icon: BodyPartImage,
+      name: bodyPart,
     },
     {
-        icon: TargetImage,
-        name: target,
+      icon: TargetImage,
+      name: target,
     },
     {
-        icon: EquipmentImage,
-        name: equipment,
-    }
-  ]
+      icon: EquipmentImage,
+      name: equipment,
+    },
+  ];
 
   return (
     <Stack
@@ -31,8 +31,8 @@ const Detail = ({ exerciseDetail }) => {
       <img src={gifUrl} alt={name} loading="lazy" className="detail-image" />
 
       <Stack sx={{ gap: { lg: "35px", xs: "20px" } }}>
-        <Typography variant="h3" textTransform='capitalize'>
-            {name}
+        <Typography variant="h3" textTransform="capitalize">
+          {name}
         </Typography>
 
         <Typography variant="h6">
@@ -42,14 +42,25 @@ const Detail = ({ exerciseDetail }) => {
         </Typography>
 
         {extraDetail.map((item) => (
-            <Stack key={item.name} direction='row' gap='24px' alignItems='center'>
-                <Button sx={{background: '#fff2db', borderRadius: '50%', width: '100px', height: '100px'}}>
-                    <img src={item.icon} alt={bodyPart} style={{ width: '50px', height: '50px'}} />
-                </Button>
-                <Typography variant="h5" textTransform='capitalize'>
-                    {item.name}
-                </Typography>
-            </Stack>
+          <Stack key={item.name} direction="row" gap="24px" alignItems="center">
+            <Button
+              sx={{
+                background: "#fff2db",
+                borderRadius: "50%",
+                width: "100px",
+                height: "100px",
+              }}
+            >
+              <img
+                src={item.icon}
+                alt={bodyPart}
+                style={{ width: "50px", height: "50px" }}
+              />
+            </Button>
+            <Typography variant="h5" textTransform="capitalize">
+              {item.name}
+            </Typography>
+          </Stack>
         ))}
       </Stack>
     </Stack>
