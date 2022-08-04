@@ -1,3 +1,5 @@
+<h1>Live preview site :</h1> https://ghap-goldgym.netlify.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
